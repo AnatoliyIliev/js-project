@@ -1,0 +1,36 @@
+.searc_form {
+  //   position: relative;
+  display: block;
+  justify-content: center;
+}
+
+.searc_container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.search_form-input {
+  width: 270px;
+  height: 40px;
+  background: $input-color;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding-left: 30px;
+  border: none;
+}
+
+// .search_form-input {
+//   position: relative;
+// }
+
+.icon-form {
+  position: absolute;
+  //   display: inline-flex;
+  //   background-size: contain;
+  top: 14px;
+  right: 30px;
+  //   transform: translateX(-50%);
+  //   fill: $cubic-bezier;
+  //   align-items: center;
+  fill: currentColor;
+}
