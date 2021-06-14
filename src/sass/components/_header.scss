@@ -1,0 +1,48 @@
+// .site-nav,
+// .auth-nav {
+//   @media screen and (max-width: 767px) {
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     display: block;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//   }
+// }
+
+.logo {
+  background: linear-gradient(
+    136.07deg,
+    rgba(196, 196, 196, 0.03) 10.75%,
+    rgba(196, 196, 196, 0) 92.33%
+  );
+  backdrop-filter: blur(30px);
+}
+
+.page__header {
+  background: $primeri-color;
+}
+
+.page__header-title {
+  display: flex;
+  justify-content: center;
+  width: 212px;
+  height: 44px;
+  left: 53px;
+  top: 78px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $title-text-color;
+}

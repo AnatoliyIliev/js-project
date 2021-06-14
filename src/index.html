@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>BEST EVENTS</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -13,12 +13,20 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/input.html"></include>
-    <include src="./partials/body.html"></include>
-    <include src="./partials/footer.html"></include>
-
+    <header>
+      <include src="./partials/header.html"></include>
+    </header>
+    
+    
+    <main>
+      <include src="./partials/input.html"></include>
+      <include src="./partials/main.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
+    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <!-- <script src="./index.js"></script> -->
+    <script src="./index.js"></script>
   </body>
 </html>

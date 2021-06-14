@@ -1,14 +1,21 @@
-<form class="search-form js-search-form" id="search-form">
-  <input type="text" name="query" autocomplete="off" placeholder="Start searching" />
-  <svg width='12' height='12' aria-label="Logo">
-    <use class="logo" href='./images/symbol-defs.svg#icon-search-icon'></use>
-  </svg>
-</form>
-<form class="choice-country js-choice-country" id="choice-country">
-  <input type="text" name="query" autocomplete="off" placeholder="Choose country" />
-  <svg width='15' height='10' aria-label="Logo">
-    <use class="logo" href='./images/symbol-defs.svg#icon-Polygon-1'></use>
-  </svg>
-  <!-- <button class="dropbtn">Choose country</button> -->
-  <ul id="myDropdown" class="dropdown-content"></ul>
-</form>
+<section class="search">  
+    <form class="searc_form js-search-form" id="search-form">
+      <div class="searc_container js-search-input">
+        <input class="search_form-input" type="text" name="query" autocomplete="off" placeholder="Start searching" />
+        <svg class="icon-form" width='12' height='12' aria-label="Logo">
+          <use class="logo" href='./images/symbol-defs.svg#icon-search-icon'></use>
+        </svg>
+      </div>
+    <!-- </form>   -->
+
+    <!-- <form class="searc_form js-choice-country" id="choice-country"> -->
+      <div class="searc_container js-search-dropdown">
+        <input class="search_form-input" type="text" name="query" autocomplete="off" placeholder="Choose country" />
+        <svg class="icon-form" width='15' height='10' aria-label="Logo">
+          <use class="logo" href='./images/symbol-defs.svg#icon-Polygon-1'></use>
+        </svg>
+          <!-- <button class="dropbtn">Choose country</button> -->
+          <ul id="myDropdown" class="dropdown-content"></ul>
+      </div>
+    </form>
+</section>
