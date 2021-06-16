@@ -1,5 +1,3 @@
-
-
 a {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   margin: 0;
@@ -18,10 +16,6 @@ p {
   /* Убираем маркеры */
 }
 
-// img {
-//   display: block;
-// }
-
 ul {
   margin-left: 0;
   /* Отступ слева в браузере IE и Opera */
@@ -38,7 +32,6 @@ body {
   font-style: $font-style;
   font-weight: 400;
 }
-
 
 img {
   display: block;
