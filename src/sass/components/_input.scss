@@ -17,11 +17,15 @@
   border-radius: 20px;
   padding-left: 30px;
   border: none;
-}
+  
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
 
-// .search_form-input {
-//   position: relative;
-// }
+  color: #939393;
+}
 
 .icon-form {
   position: absolute;
