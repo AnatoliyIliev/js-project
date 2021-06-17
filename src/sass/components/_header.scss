@@ -1,10 +1,22 @@
+.header {
+  position: relative;
+}
+
+.main-nav {
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+
 .logo {
   background: linear-gradient(
-    136.07deg,
-    rgba(196, 196, 196, 0.03) 10.75%,
-    rgba(196, 196, 196, 0) 92.33%
-  );
+      136.07deg,
+      rgba(196, 196, 196, 0.03) 10.75%,
+      rgba(196, 196, 196, 0) 92.33%
+    ),
+    url(/images/svg/icomoon/SVG/logoLogo.svg);
   backdrop-filter: blur(30px);
+  transform: rotate(90deg);
 }
 
 .page__header {
@@ -12,35 +24,40 @@
 }
 
 .page__header-title {
+  // position: absolute;
   display: flex;
   justify-content: center;
   width: 212px;
-  // height: 44px;
-
   font-family: $font-family;
   font-style: $font-style;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.23;
   text-align: center;
-
   color: $title-text-color;
+  margin: 0 auto;
+  padding-top: 78px;
+  margin-bottom: 25px;
 }
 
-// .site-nav,
-// .auth-nav {
-//   @media screen and (max-width: 767px) {
-//   }
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
 
-//   @media screen and (min-width: 768px) {
-//     display: block;
-//   }
+  @media (min-resolution: 2dppx) {
+    background-image: url(/images/pic@2x-mobile.jpg);
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/pic@1x-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(/images/pic@2x-tablet.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(/images/pic@1x-comp.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(/images/pic@2x-comp.jpg);
+    }
+  }
+}
