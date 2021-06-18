@@ -1,22 +1,55 @@
-.header {
-  position: relative;
+body {
+  // position: relative;
+  background: rgba(11, 11, 11, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 364px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(/images/pic@2x-mobile.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/pic@1x-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(/images/pic@2x-tablet.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 446px;
+    background-image: url(/images/pic@1x-comp.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(/images/pic@2x-comp.jpg);
+    }
+  }
 }
+
+// .header {
+//   position: relative;
+// }
 
 .main-nav {
   position: absolute;
   top: 0px;
-  left: -15px;
+  left: 0px;
+  @media screen and (min-width: 768px) {
+    top: -30px;
+    left: 0px;
+  }
 }
 
 .logo {
-  background: linear-gradient(
-      136.07deg,
-      rgba(196, 196, 196, 0.03) 10.75%,
-      rgba(196, 196, 196, 0) 92.33%
-    ),
-    url(/images/svg/icomoon/SVG/logoLogo.svg);
-  backdrop-filter: blur(30px);
-  transform: rotate(90deg);
+  width: 108px;
+  height: 90px;
+  @media screen and (min-width: 768px) {
+    width: 151px;
+    height: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 239px;
+    height: 202px;
+  }
 }
 
 .page__header {
@@ -38,26 +71,11 @@
   margin: 0 auto;
   padding-top: 78px;
   margin-bottom: 25px;
-}
-
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url(/images/pic@2x-mobile.jpg);
-  }
-
   @media screen and (min-width: 768px) {
-    background-image: url(/images/pic@1x-tablet.jpg);
-    @media (min-resolution: 2dppx) {
-      background-image: url(/images/pic@2x-tablet.jpg);
-    }
+    margin-bottom: 27px;
+    padding-top: 40px;
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(/images/pic@1x-comp.jpg);
-    @media (min-resolution: 2dppx) {
-      background-image: url(/images/pic@2x-comp.jpg);
-    }
+    margin-bottom: 52px;
   }
 }
