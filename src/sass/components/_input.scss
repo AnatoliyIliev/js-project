@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-// .searc_form {
-//   margin: 0 auto;
-// }
-
 .searc_container {
   position: relative;
   margin-bottom: 25px;
@@ -17,6 +13,12 @@
   // height: 40px;
   margin: 0 auto;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
 }
 
 .search_form-input {
@@ -41,12 +43,12 @@
 
 .icon-form {
   position: absolute;
-  //   display: inline-flex;
-  //   background-size: contain;
   top: 14px;
   right: 30px;
-  //   transform: translateX(-50%);
-  //   fill: $cubic-bezier;
-  //   align-items: center;
-  // fill: currentColor;
+}
+
+.searc_form {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
