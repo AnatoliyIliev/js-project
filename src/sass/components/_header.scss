@@ -16,7 +16,7 @@
     ),
     url(/images/svg/icomoon/SVG/logoLogo.svg);
   backdrop-filter: blur(30px);
-  transform: rotate(90deg);
+  // transform: rotate(90deg);
 }
 
 .page__header {
@@ -40,9 +40,11 @@
   margin-bottom: 25px;
 }
 
-body {
+.header {
   background-size: cover;
   background-repeat: no-repeat;
+  // margin: 0;
+  // max-width: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url(/images/pic@2x-mobile.jpg);
