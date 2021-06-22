@@ -40,6 +40,14 @@ body {
 }
 
 .logo {
+  background: linear-gradient(
+      136.07deg,
+      rgba(196, 196, 196, 0.03) 10.75%,
+      rgba(196, 196, 196, 0) 92.33%
+    ),
+    url(/images/svg/icomoon/SVG/logoLogo.svg);
+  backdrop-filter: blur(30px);
+  // transform: rotate(90deg);
   width: 108px;
   height: 90px;
   @media screen and (min-width: 768px) {
@@ -71,6 +79,16 @@ body {
   margin: 0 auto;
   padding-top: 78px;
   margin-bottom: 25px;
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  // margin: 0;
+  // max-width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(/images/pic@2x-mobile.jpg);
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 27px;
     padding-top: 40px;
