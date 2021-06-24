@@ -8,16 +8,24 @@
 
 .searc_container {
   position: relative;
-  margin-bottom: 25px;
   width: 270px;
   // height: 40px;
   margin: 0 auto;
-  margin-bottom: 25px;
   @media screen and (min-width: 768px) {
-    margin: 0 auto;
+    margin: 0;
+    margin-bottom: 123px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 52px;
+    margin: 0;
+    margin-bottom: 133px;
+  }
+}
+
+.searc_container:first-child {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    // width: calc((100% - 2 * 15px) / 1);
+    margin-right: 30px;
   }
 }
 
@@ -50,5 +58,6 @@
 .searc_form {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
   }
 }
