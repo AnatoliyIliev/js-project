@@ -1,0 +1,19 @@
+{{#each this}}
+<li class="gallery-list">
+    <div class="photo-card">
+        <img src="{{images}}" alt="" width="360" height="240"/>
+
+        <div class="stats">
+            <p class="stats-item">
+                <i class="material-icons"></i>{{name}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons"></i>{{dates.start.localDate}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">comment</i>{{city.name}}
+            </p>            
+        </div>
+    </div>
+</li>
+{{/each}}
