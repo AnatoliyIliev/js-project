@@ -1,17 +1,17 @@
 {{#each this}}
-<li class="gallery-list">
-    <div class="photo-card">
-        <img src="{{images}}" alt="" width="360" height="240"/>
+<li class="card-list">
+    <div class="card-photo">
+        <img class="card-photo-img" src="{{images.3.url}}" alt=""/>
 
-        <div class="stats">
-            <p class="stats-item">
-                <i class="material-icons"></i>{{name}}
+        <div class="card-stats">
+            <p class="name-icons">
+                {{name}}
             </p>
-            <p class="stats-item">
-                <i class="material-icons"></i>{{dates.start.localDate}}
+            <p class="date-icons">
+                {{dates.start.localDate}}
             </p>
-            <p class="stats-item">
-                <i class="material-icons">comment</i>{{city.name}}
+            <p class="city-icons">
+                {{city.name}}
             </p>            
         </div>
     </div>

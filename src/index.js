@@ -2,9 +2,9 @@ import './sass/main.scss';
 import cardContainer from './templates/cards.hbs';
 import ApiService from './js/apiService';
 import getRefs from './js/get-refs';
-// import debounce from 'lodash.debounce';
+import debounce from 'lodash.debounce';
 
-var debounce = require('lodash.debounce');
+// var debounce = require('lodash.debounce');
 
 const refs = getRefs();
 
@@ -12,23 +12,21 @@ const newApiService = new ApiService();
 
 refs.searchInput.addEventListener('input', debounce(onSearch, 500));
 
-console.log(newApiService.apiService())
-
-function onSearch(e) {
-    console.log(e);
+function onSearch(e) {    
     e.preventDefault();
    
-    newApiService.query = e.currentTarget; 
+    newApiService.query = e.target.value;
+    // console.log(newApiService.query);
  
-    newApiService.resetPage();  
+    // newApiService.resetPage();  
     clearContainer();
     fetchArticles();        
 }
 
 function fetchArticles() {  
   newApiService.apiService()
-      .then(gallery => {        
-        buildListMarkup(gallery);
+      .then(cards => {        
+        buildListMarkup(cards);
       })
       .catch('error'); 
 }
