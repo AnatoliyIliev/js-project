@@ -9,14 +9,14 @@ export default class ApiService {
      }        
 
     apiService() {
-        const URL = `${BASE_URL}keyword=art&source=${this.searchQuery}&apikey=${API_KEY}`;
+        const URL = `${BASE_URL}keyword=${this.searchQuery}&apikey=${API_KEY}`;
         return fetch(URL)
             .then(response => {
                 if (response.ok) return response.json();
                 throw new Error('Error fatching data')
             })
             .then(({ _embedded }) => {
-                this.page += 1;
+                // this.page += 1;
                 return _embedded.events;
             })
             .catch(error => console.log(error)
